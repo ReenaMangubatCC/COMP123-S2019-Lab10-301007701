@@ -10,11 +10,22 @@ using System.Windows.Forms;
 
 namespace COMP123_S2019_Lab10_301007701
 {
-    public partial class Form1 : Form
+    public partial class MainForm : Form
     {
-        public Form1()
+        public MainForm()
         {
             InitializeComponent();
+        }
+
+        private void NextButton_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+            Hide();
+        }
+
+        private void CloseButton_Click(object sender, EventArgs e)
+        {
+           
         }
     }
 }
