@@ -20,12 +20,14 @@ namespace COMP123_S2019_Lab10_301007701
         private void BackButton_Click(object sender, EventArgs e)
         {
             Hide();
-            Show();
+            Application.Exit();
+            MainForm mainForm = new MainForm();
+            mainForm.Show();
         }
 
         private void CloseButton_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+          
         }
     }
 }

@@ -31,7 +31,6 @@
             this.components = new System.ComponentModel.Container();
             this.StartLabel = new System.Windows.Forms.Label();
             this.SplashTimer = new System.Windows.Forms.Timer(this.components);
-            this.CloseButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // StartLabel
@@ -49,16 +48,6 @@
             this.SplashTimer.Interval = 3000;
             this.SplashTimer.Tick += new System.EventHandler(this.SplashTimer_Tick);
             // 
-            // CloseButton
-            // 
-            this.CloseButton.Location = new System.Drawing.Point(713, 12);
-            this.CloseButton.Name = "CloseButton";
-            this.CloseButton.Size = new System.Drawing.Size(75, 23);
-            this.CloseButton.TabIndex = 1;
-            this.CloseButton.Text = "X";
-            this.CloseButton.UseVisualStyleBackColor = true;
-            this.CloseButton.Click += new System.EventHandler(this.CloseButton_Click);
-            // 
             // StartForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -66,7 +55,6 @@
             this.BackColor = System.Drawing.Color.LightGray;
             this.ClientSize = new System.Drawing.Size(800, 600);
             this.ControlBox = false;
-            this.Controls.Add(this.CloseButton);
             this.Controls.Add(this.StartLabel);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -85,6 +73,5 @@
 
         private System.Windows.Forms.Label StartLabel;
         private System.Windows.Forms.Timer SplashTimer;
-        private System.Windows.Forms.Button CloseButton;
     }
 }

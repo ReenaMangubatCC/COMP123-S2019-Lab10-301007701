@@ -19,8 +19,8 @@ namespace COMP123_S2019_Lab10_301007701
 
         private void NextButton_Click(object sender, EventArgs e)
         {
-            Application.Exit();
             Hide();
+            Application.Exit();
         }
 
         private void CloseButton_Click(object sender, EventArgs e)
